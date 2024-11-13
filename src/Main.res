@@ -1,4 +1,5 @@
 %%raw("import './index.css'")
+%%raw(`import "@fortawesome/fontawesome-free/css/all.min.css"`)
 
 switch ReactDOM.querySelector("#root") {
 | Some(domElement) =>

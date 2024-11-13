@@ -1,20 +1,15 @@
+// Un hook permet de manipuler ou modifier l'etat d'un composant
 @react.component
 let make = () => {
-  let (count, setCount) = React.useState(() => 0)
+    <Base>
 
-  <div className="p-6">
-    <h1 className="text-3xl font-semibold"> {"What is this about?"->React.string} </h1>
-    <p>
-      {React.string("This is a simple template for a Vite project using ReScript & Tailwind CSS.")}
-    </p>
-    <h2 className="text-2xl font-semibold mt-5"> {React.string("Fast Refresh Test")} </h2>
-    <Button onClick={_ => setCount(count => count + 1)}>
-      {React.string(`count is ${count->Int.toString}`)}
-    </Button>
-    <p>
-      {React.string("Edit ")}
-      <code> {React.string("src/App.res")} </code>
-      {React.string(" and save to test Fast Refresh.")}
-    </p>
-  </div>
+      <div className="pt-16">
+        <Header interval=3600 />
+      </div>
+
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <Content />
+      </div>
+      
+    </Base>
 }
