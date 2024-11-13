@@ -36,12 +36,12 @@ let make = (~children) => {
           </div>
           <div className="flex space-x-4 ml-auto">
             <a
-              href="#"
+              href="login"
               className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
               {React.string("Connexion")}
             </a>
             <a
-              href="#"
+              href="signup"
               className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
               {React.string("Inscription")}
             </a>
